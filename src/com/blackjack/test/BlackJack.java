@@ -86,9 +86,7 @@ public class BlackJack
             char choice;
             do 
             {
-                //userAction = Character.toUpperCase( TextIO.getlnChar(0) );
-                //userAction = keyboard.nextLine().charAt(0).toUpperCase(); <---- COULD NOT GET .toUpperCase() TO WORK!
-                choice = keyboard.nextLine().charAt(0);
+                choice = keyboard.nextLine().toUpperCase().charAt(0);
                 if (choice !='H' && choice !='S')
                 {
                     System.out.print("ERROR! Please respond H or S: (Capital)  "); //Validation
